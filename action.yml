@@ -1,0 +1,29 @@
+name: 'Firebase App Distribution'
+description: 'This GitHub Action that uploads apk to Firebase App Distribution'
+author: 'ManishKumar'
+inputs:
+  appId:
+    description: 'Your app's Firebase App ID. You can find the App ID in the Firebase console, on the General Settings page'
+    required: true
+  token:
+    description: 'A refresh token that's printed when you authenticate your CI environment with the Firebase CLI'
+    required: true
+  file:
+    description: 'Artifact to upload APK'
+    required: true
+  groups:
+    description: 'Distribution groups'
+    required: false
+  releaseNotes:
+    description: 'Release notes visible on release page'
+    required: false
+  releaseNotesFile:
+    description: 'Release notes visible on release page'
+    required: false    
+  debug:
+    description: 'Flag that can included to print verbose log output.'
+    required: false
+    default: false
+runs:
+  using: 'docker'
+  image: 'NodeDockerfile'
