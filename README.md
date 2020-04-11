@@ -51,7 +51,7 @@ on:
 
 jobs:
   apk:
-    name: Generate APK
+    name: Upload APk To FireBase App Disturbution
     runs-on: ubuntu-latest
 
     steps:
