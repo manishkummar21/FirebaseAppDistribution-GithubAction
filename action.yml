@@ -3,10 +3,10 @@ description: 'This GitHub Action that uploads apk to Firebase App Distribution'
 author: 'ManishKumar'
 inputs:
   appId:
-    description: 'Your app's Firebase App ID. You can find the App ID in the Firebase console, on the General Settings page'
+    description: 'Find the App ID in the Firebase console, on the General Settings page'
     required: true
   token:
-    description: 'A refresh token that's printed when you authenticate your CI environment with the Firebase CLI'
+    description: 'See Firebase CLI Reference'
     required: true
   file:
     description: 'Artifact to upload APK'
